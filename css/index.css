@@ -1,0 +1,46 @@
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.nav-scroller .nav {
+  display: flex;
+    /* all in one line */ 
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+    /*  scrolling with mouse in phone*/
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+
+/*
+@media screen and (max-width: 776px) {
+.nav-scroller .nav {
+/*  to delete the scroll bar  i dont knowhow but it works hhh : p
+  padding-bottom: 1rem;
+}
+*/
+
+
+footer {
+  max-height: 100% ;
+  color: grey;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* in small devices put archives in middle */ 
+@media (max-width: 776px) {
+  .archives  { text-align:center } 
+}
